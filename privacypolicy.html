@@ -1,252 +1,157 @@
 <!DOCTYPE html>
 <html lang="tr">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Gizlilik Politikası - AstroFelyx: Galaxy Puzzle</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="index, follow">
+<title>Gizlilik Politikası | 101 Okey</title>
 <style>
-  :root {
-    --bg: #0b0f1f;
-    --card: #11172b;
-    --border: #232b45;
-    --text: #e6e9f5;
-    --text-dim: #a6adc9;
-    --accent: #7c5cff;
-    --accent-soft: #9d85ff;
-  }
-  * { box-sizing: border-box; }
-  body {
-    margin: 0;
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-    background: radial-gradient(circle at 50% -10%, #1a1440 0%, #0b0f1f 55%, #05060f 100%);
-    color: var(--text);
-    line-height: 1.65;
-  }
-  .wrap {
-    max-width: 760px;
-    margin: 0 auto;
-    padding: 40px 20px 80px;
-  }
-  header {
-    text-align: center;
-    margin-bottom: 32px;
-  }
-  header .badge {
-    display: inline-block;
-    font-size: 13px;
-    color: var(--accent-soft);
-    background: rgba(124, 92, 255, 0.12);
-    border: 1px solid rgba(124, 92, 255, 0.35);
-    padding: 4px 14px;
-    border-radius: 999px;
-    margin-bottom: 14px;
-  }
-  h1 {
-    font-size: 26px;
-    margin: 0 0 6px;
-    letter-spacing: -0.02em;
-  }
-  .updated {
-    color: var(--text-dim);
-    font-size: 13px;
-  }
-  .card {
-    background: var(--card);
-    border: 1px solid var(--border);
-    border-radius: 16px;
-    padding: 22px 24px;
-    margin-bottom: 18px;
-  }
-  h2 {
-    font-size: 17px;
-    color: var(--accent-soft);
-    margin: 0 0 10px;
-    display: flex;
-    align-items: center;
-    gap: 8px;
-  }
-  p { color: var(--text); font-size: 14.5px; margin: 8px 0; }
-  ul { margin: 8px 0; padding-left: 20px; }
-  li { margin-bottom: 6px; font-size: 14.5px; }
-  a { color: var(--accent-soft); text-decoration: none; border-bottom: 1px dotted var(--accent-soft); }
-  a:hover { color: var(--accent); }
-  .highlight {
-    background: rgba(34, 197, 94, 0.10);
-    border: 1px solid rgba(34, 197, 94, 0.35);
-    border-radius: 12px;
-    padding: 14px 16px;
-    font-size: 14px;
-    color: #c8f5d9;
-  }
-  table {
-    width: 100%;
-    border-collapse: collapse;
-    margin-top: 10px;
-    font-size: 13.5px;
-  }
-  th, td {
-    text-align: left;
-    padding: 8px 10px;
-    border-bottom: 1px solid var(--border);
-    vertical-align: top;
-  }
-  th { color: var(--text-dim); font-weight: 600; }
-  footer {
-    text-align: center;
-    color: var(--text-dim);
-    font-size: 12.5px;
-    margin-top: 30px;
-  }
-  .contact-btn {
-    display: inline-block;
-    margin-top: 8px;
-    background: var(--accent);
-    color: white;
-    padding: 8px 18px;
-    border-radius: 999px;
-    font-size: 13.5px;
-    border: none;
-    font-weight: 600;
-  }
+:root{--bg:#ffffff;--fg:#2a1b20;--mut:#6d5a61;--acc:#6b1a33;--line:#e6dde0;--soft:#f7f2f3;--mark:#fff0a8}
+@media (prefers-color-scheme:dark){:root{--bg:#190c11;--fg:#efe4e8;--mut:#b8a3ab;--acc:#e8a3b8;--line:#3a2229;--soft:#24131a;--mark:#5a4a10}}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--bg);color:var(--fg);font:17px/1.7 "Iowan Old Style","Palatino Linotype",Georgia,serif}
+header{border-top:6px solid var(--acc);border-bottom:1px solid var(--line);background:var(--soft)}
+.w{max-width:760px;margin:0 auto;padding:0 20px}
+header .w{padding-top:28px;padding-bottom:24px}
+.app{font:600 14px/1.2 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;color:var(--acc);letter-spacing:.02em}
+h1{font:700 30px/1.2 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;margin:6px 0 10px}
+.meta{font:14px/1.5 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;color:var(--mut);margin:0}
+main{padding-bottom:56px}
+h2{font:650 20px/1.3 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;margin:40px 0 8px;color:var(--acc);scroll-margin-top:12px}
+h3{font:600 16px/1.4 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;margin:22px 0 4px}
+p{margin:10px 0}
+ul{margin:8px 0 8px 0;padding-left:22px}
+li{margin:5px 0}
+nav{margin:26px 0 0;padding:16px 20px;border:1px solid var(--line);border-radius:10px;background:var(--soft)}
+nav b{font:600 14px system-ui,sans-serif;color:var(--mut)}
+nav ol{margin:8px 0 0;padding-left:22px;font:15px/1.6 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;columns:2;column-gap:28px}
+nav a{color:var(--fg);text-decoration:none}
+nav a:hover{text-decoration:underline}
+a{color:var(--acc)}
+mark{background:var(--mark);color:inherit;padding:0 3px;border-radius:3px}
+.box{border-left:4px solid var(--acc);background:var(--soft);padding:10px 16px;margin:16px 0}
+table{width:100%;border-collapse:collapse;margin:12px 0;font:15px/1.5 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif}
+th,td{border:1px solid var(--line);padding:8px 10px;text-align:left;vertical-align:top}
+th{background:var(--soft)}
+.tw{overflow-x:auto}
+footer{border-top:1px solid var(--line);padding:18px 0 40px;font:14px/1.5 system-ui,sans-serif;color:var(--mut)}
+@media (max-width:560px){nav ol{columns:1}h1{font-size:25px}body{font-size:16.5px}}
 </style>
 </head>
 <body>
-<div class="wrap">
+<header><div class="w">
+<div class="app">101 Okey</div>
+<h1>Gizlilik Politikası</h1>
+<p class="meta">101 Okey oyunu için kişisel verilerin işlenmesi ve korunması</p>
+<p class="meta">Son güncelleme: 6 Kasım 2026 &nbsp;|&nbsp; <a href="hizmet-sartlari.html">Hizmet Şartları</a></p>
+</div></header>
+<main class="w">
+<nav aria-label="İçindekiler"><b>İçindekiler</b><ol><li><a href="#b1">Kimiz</a></li><li><a href="#b2">Topladığımız veriler</a></li><li><a href="#b3">Verileri neden kullanıyoruz</a></li><li><a href="#b4">Verileri kimlerle paylaşıyoruz</a></li><li><a href="#b5">Yurt dışına aktarım</a></li><li><a href="#b6">Saklama süreleri</a></li><li><a href="#b7">Reklamlar</a></li><li><a href="#b8">Çocukların gizliliği</a></li><li><a href="#b9">Haklarınız ve başvuru</a></li><li><a href="#b10">Hesap ve veri silme</a></li><li><a href="#b11">Güvenlik</a></li><li><a href="#b12">Değişiklikler</a></li><li><a href="#b13">İletişim</a></li></ol></nav>
 
-  <header>
-    <span class="badge">🚀 AstroFelyx: Galaxy Puzzle</span>
-    <h1>Gizlilik Politikası</h1>
-    <div class="updated">Son güncelleme: 21 Temmuz 2026</div>
-  </header>
+<p>Bu politika, 101 Okey mobil oyununu (&ldquo;Oyun&rdquo;) kullandığınızda hangi kişisel verilerin işlendiğini, nedenini ve haklarınızı anlatır. Oyunu kullanarak bu politikayı okuduğunuzu kabul etmiş olursunuz. Kabul etmiyorsanız Oyunu kullanmayın.</p>
 
-  <div class="card highlight">
-    <strong>Kısaca:</strong> AstroFelyx: Galaxy Puzzle, kendi sunucularında hiçbir kişisel veri toplamaz,
-    saklamaz veya işlemez. Oyun ilerlemeniz (skor, seviye, ayarlar) yalnızca cihazınızda yerel olarak
-    saklanır. Uygulama içindeki reklam (Yandex Ads) ve bulut kayıt/skor tablosu (Google Play Games) gibi
-    özellikler için yalnızca aşağıda belirtilen üçüncü taraf servisler devreye girer.
-  </div>
+<h2 id="b1">1. Kimiz</h2>
+<p>Verilerinizin sorumlusu (KVKK anlamında veri sorumlusu): <mark>[GELİŞTİRİCİ ADI / ŞİRKET ÜNVANI]</mark>, <mark>[ADRES]</mark>. İletişim: <mark>[E-POSTA ADRESİ]</mark>.</p>
 
-  <div class="card">
-    <h2>1. Bu Politika Kimin İçin Geçerli</h2>
-    <p>
-      Bu Gizlilik Politikası, <strong>AstroFelyx: Galaxy Puzzle</strong> mobil uygulamasını (Android)
-      kullanan tüm kullanıcılar için geçerlidir. Uygulamayı indirip kullanarak bu politikada açıklanan
-      uygulamaları kabul etmiş olursunuz.
-    </p>
-  </div>
+<h2 id="b2">2. Topladığımız veriler</h2>
+<h3>Siz verdiğinizde veya oyunu kullandığınızda oluşan veriler</h3>
+<ul>
+<li><b>Hesap bilgileri.</b> Misafir olarak girerseniz cihazınızın Android kimliğinden türetilen bir hesap tanımlayıcısı oluşturulur. Google ile girerseniz Google hesabınızın e-posta adresi ve hesap kimliği alınır. Google şifrenizi görmeyiz.</li>
+<li><b>Profil.</b> Takma adınız ve seçtiğiniz avatar numarası. Takma ad ve avatar, aynı masadaki ve listelerdeki diğer oyuncular tarafından görülür.</li>
+<li><b>Oyun verileri.</b> Bilet bakiyeniz ve bilet hareketleri, günlük ve reklam bileti kayıtları, seviye, deneyim ve haftalık lig puanınız, oynadığınız maçlar, masa ve koltuk bilgisi, mesaj kutunuzdaki bildirimler. Masalarda yalnızca hazır hızlı mesajlar kullanılır, serbest metin sohbeti yoktur.</li>
+<li><b>Arkadaşlık ve masa daveti.</b> Bu özellikleri kullanırsanız ilgili oyuncular arasındaki bağlantı bilgisi tutulur.</li>
+</ul>
 
-  <div class="card">
-    <h2>2. Geliştiricinin Kendisi Ne Topluyor?</h2>
-    <p>
-      <strong>Hiçbir şey.</strong> AstroFelyx: Galaxy Puzzle'ın kendi arka uç (backend) sunucusu yoktur;
-      geliştirici hiçbir kullanıcı hesabı oluşturmaz, isim, e-posta, telefon numarası, konum ya da
-      benzeri kişisel veri talep etmez veya toplamaz.
-    </p>
-    <p>Uygulama içinde cihazınızda yerel olarak (yalnızca kendi telefonunuzda) saklanan bilgiler:</p>
-    <ul>
-      <li>Oyun ilerlemesi (seviye, yıldız, XP, günlük seri, tamamlanan bölümler)</li>
-      <li>Uygulama içi tercihler (dil, müzik/ses efekti açık-kapalı durumu)</li>
-      <li>Kullanım Şartları / Gizlilik Politikası onay durumunuz ve (varsa) reklam rıza tercihiniz</li>
-    </ul>
-    <p>
-      Bu veriler cihazınızın yerel deposunda (SharedPreferences) tutulur, hiçbir sunucuya
-      gönderilmez ve uygulamayı kaldırdığınızda cihazınızdan tamamen silinir.
-    </p>
-  </div>
+<h3>Otomatik toplanan veriler</h3>
+<ul>
+<li><b>Güvenlik ve hile önleme kayıtları.</b> Maç sırasında koltuk, IP adresi ve cihaz tanımlayıcısı kaydedilir. Bu kayıtlar hile, çoklu hesap ve bilet aktarma gibi kötüye kullanımları tespit etmek ve ban uygulamak içindir.</li>
+<li><b>Reklam verileri.</b> Oyunda banner ve ödüllü reklam gösteririz. Reklam ortaklarımız reklam kimliğinizi (Android Reklam Kimliği), IP adresinizi, cihaz ve ağ bilgilerinizi ve reklamla etkileşiminizi işleyebilir. Ayrıntılar 7. bölümdedir.</li>
+<li><b>Bildirim bilgisi.</b> Bildirim özelliği açıldığında, cihazınıza bildirim göndermek için bir bildirim anahtarı (push token) hesabınıza bağlanır.</li>
+<li><b>Çökme ve kullanım istatistikleri.</b> Hata raporları ve anonim kullanım olayları (örneğin bir maçın başlaması) toplanabilir. Bunun için Google Firebase gibi bir hizmet kullanılabilir.</li>
+</ul>
 
-  <div class="card">
-    <h2>3. Üçüncü Taraf Servisler</h2>
-    <p>
-      Uygulama, iki adet üçüncü taraf servis kullanır. Bu servisler kendi gizlilik politikalarına
-      tabidir ve bazı verileri kendi amaçları doğrultusunda toplayabilir:
-    </p>
+<h3>Yalnızca cihazınızda tutulanlar</h3>
+<ul><li>Ses, müzik, titreşim ve benzeri ayarlarınız ile &ldquo;İstatistiklerim&rdquo; ekranındaki kişisel rekorlarınız cihazınızda saklanır, sunucuya gönderilmez. Uygulama verisini silerseniz bunlar da silinir.</li></ul>
 
-    <table>
-      <tr>
-        <th>Servis</th>
-        <th>Amaç</th>
-        <th>Toplayabileceği Veri</th>
-      </tr>
-      <tr>
-        <td><strong>Yandex Ads</strong><br>(Yandex Mobile Ads SDK)</td>
-        <td>Uygulama içi ödüllü reklamların gösterilmesi</td>
-        <td>Reklam kimliği (Advertising ID), cihaz bilgisi, IP adresi, yaklaşık konum, reklam
-          etkileşim verileri</td>
-      </tr>
-      <tr>
-        <td><strong>Google Play Games Services</strong></td>
-        <td>Bulut kayıt (ilerlemenin cihazlar arası senkronizasyonu), başarımlar ve skor tabloları</td>
-        <td>Google hesabı kimliği, oyun içi başarım/skor verileri</td>
-      </tr>
-    </table>
+<h3>Toplamadığımız veriler</h3>
+<ul><li>Konumunuzu, rehberinizi, fotoğraflarınızı, mikrofonunuzu veya kameranızı kullanmayız. Gerçek ad ve kimlik bilgisi istemeyiz. Oyunda gerçek para ile bahis yoktur, ödeme kartı bilgisi tarafımızca alınmaz. İleride uygulama içi satın alma sunulursa ödeme Google Play üzerinden yapılır ve kart bilgileriniz bize ulaşmaz.</li></ul>
 
-    <p style="margin-top:14px;">Bu servislerin kendi gizlilik politikaları için:</p>
-    <ul>
-      <li><a href="https://yandex.com/legal/mobileads_sdk_agreement/" target="_blank" rel="noopener">Yandex Mobile Ads Gizlilik ve Kullanım Şartları</a></li>
-      <li><a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google Gizlilik Politikası (Play Games dahil)</a></li>
-    </ul>
-  </div>
+<h2 id="b3">3. Verileri neden kullanıyoruz</h2>
+<div class="tw"><table>
+<tr><th>Amaç</th><th>Hukuki sebep</th></tr>
+<tr><td>Hesabınızı açmak, oyunu ve maçları çalıştırmak, bilet ve lig sistemini yürütmek</td><td>Sözleşmenin kurulması ve ifası (KVKK m.5/2-c)</td></tr>
+<tr><td>Hile, çoklu hesap ve kötüye kullanımı önlemek, oyun güvenliğini sağlamak</td><td>Meşru menfaat (KVKK m.5/2-f)</td></tr>
+<tr><td>Hataları bulmak ve oyunu iyileştirmek</td><td>Meşru menfaat (KVKK m.5/2-f)</td></tr>
+<tr><td>Reklam göstermek ve reklam gelirini sağlamak</td><td>Meşru menfaat ve gerektiğinde açık rıza (KVKK m.5/2-f, m.5/1)</td></tr>
+<tr><td>Yasal yükümlülükleri yerine getirmek, yetkili makam taleplerini yanıtlamak</td><td>Hukuki yükümlülük (KVKK m.5/2-ç)</td></tr>
+</table></div>
+<p>Verilerinizi satmayız. Profil çıkarma veya otomatik karar verme yoluyla sizin aleyhinize sonuç doğuran bir işlem yapmayız. Hile tespitinde otomatik sinyaller kullanılabilir, ancak ban gibi yaptırımlar için itiraz edebilirsiniz (bkz. 9. bölüm).</p>
 
-  <div class="card">
-    <h2>4. AB / AEA / İsviçre / Birleşik Krallık Kullanıcıları (GDPR)</h2>
-    <p>
-      Bu bölgelerdeki kullanıcılara, uygulama ilk açıldığında kişiselleştirilmiş veya
-      kişiselleştirilmemiş reklam gösterimi konusunda seçim sunulur. Bu tercih istediğiniz zaman
-      uygulama içindeki <strong>Profil</strong> ekranından değiştirilebilir. GDPR kapsamında;
-      verilerinize erişim, düzeltme, silme, işlemeye itiraz etme ve rızanızı geri çekme haklarına
-      sahipsiniz. Bu haklar yalnızca üçüncü taraf servislerin (Yandex, Google) topladığı veriler için
-      geçerlidir; geliştirici zaten hiçbir kişisel veri tutmamaktadır.
-    </p>
-  </div>
+<h2 id="b4">4. Verileri kimlerle paylaşıyoruz</h2>
+<p>Verileriniz yalnızca hizmeti sunmak için gereken ölçüde şu taraflarla paylaşılır:</p>
+<ul>
+<li><b>Altyapı sağlayıcıları:</b> Supabase (kimlik doğrulama ve veritabanı), Cloudflare (oyun sunucusu ve ağ). Bunlar verilerinizi bizim adımıza işler.</li>
+<li><b>Google:</b> Google ile giriş yaparsanız kimlik doğrulama için; Google Play, bildirim (Firebase Cloud Messaging) ve kullanılıyorsa Firebase analitik ve çökme raporlama için.</li>
+<li><b>Reklam ortakları:</b> Unity LevelPlay (ironSource) ve onun üzerinden bağlı reklam ağları (örneğin Unity Ads). Bu ortaklar kendi gizlilik politikalarına göre bağımsız veri sorumlusu olabilir.</li>
+<li><b>Diğer oyuncular:</b> Takma adınız, avatarınız, seviyeniz ve lig puanınız oyunda diğer oyunculara görünür.</li>
+<li><b>Yetkili kurumlar:</b> Kanunen zorunlu olduğunda mahkeme veya yetkili makamlara.</li>
+</ul>
 
-  <div class="card">
-    <h2>5. Türkiye Kullanıcıları (KVKK)</h2>
-    <p>
-      6698 sayılı Kişisel Verilerin Korunması Kanunu (KVKK) kapsamında da durum aynıdır: uygulama
-      geliştiricisi herhangi bir kişisel veri işlemez. Üçüncü taraf servislerin (Yandex Ads, Google
-      Play Games) veri işleme faaliyetleri için ilgili servislerin kendi politikalarına
-      başvurabilirsiniz.
-    </p>
-  </div>
+<h2 id="b5">5. Yurt dışına aktarım</h2>
+<p>Altyapı ve reklam sağlayıcılarımızın sunucuları Türkiye dışında olabilir. Bu nedenle verileriniz yurt dışına aktarılabilir. Aktarımları KVKK m.9 ve ilgili mevzuata uygun şekilde, sağlayıcılarla yapılan sözleşme ve güvenceler çerçevesinde yaparız. Avrupa Birliği ve Birleşik Krallık kullanıcıları için GDPR kapsamındaki haklar 9. bölümde yer alır.</p>
 
-  <div class="card">
-    <h2>6. Çocukların Gizliliği</h2>
-    <p>
-      AstroFelyx: Galaxy Puzzle, 13 yaş altı çocuklardan bilerek kişisel veri toplamaz. Uygulama genel
-      kitleye yöneliktir ve doğrudan çocuklara pazarlanmamaktadır. Bir ebeveyn veya vasi, 13 yaş
-      altındaki bir çocuğun uygulama üzerinden üçüncü taraf servislere (örn. reklam kimliği) veri
-      sağladığını düşünüyorsa, aşağıdaki iletişim adresinden bize ulaşabilir.
-    </p>
-  </div>
+<h2 id="b6">6. Saklama süreleri</h2>
+<ul>
+<li>Hesap ve profil verileri hesabınız açık olduğu sürece saklanır.</li>
+<li>Maç kayıtları ve koltuk/IP/cihaz kayıtları sunucuda otomatik temizlenir. Şu anki ayara göre maç kayıtları yaklaşık 14 gün, bilet hareket kayıtları yaklaşık 60 gün sonra silinir. Bu süreler güvenlik ihtiyaçlarına göre değişebilir.</li>
+<li>Ban ve hile cezası kayıtları, kötüye kullanımın tekrarını önlemek için gerekli süre boyunca saklanabilir.</li>
+<li>Hesabınızı sildiğinizde kişisel verileriniz silinir veya anonim hale getirilir. Yasal saklama yükümlülüğü olanlar bu yükümlülüğün süresi kadar saklanır.</li>
+</ul>
 
-  <div class="card">
-    <h2>7. Veri Güvenliği ve Saklama Süresi</h2>
-    <p>
-      Cihazınızda tutulan tüm veriler, uygulamayı kaldırdığınız anda kalıcı olarak silinir.
-      Geliştirici tarafında saklanan hiçbir veri olmadığından, ayrıca bir saklama süresi veya
-      merkezi silme talebi söz konusu değildir.
-    </p>
-  </div>
+<h2 id="b7">7. Reklamlar</h2>
+<p>Oyun, reklamlarla ücretsiz sunulur. Ekranın üstünde banner reklam gösterilir. İsterseniz bilet kazanmak için ödüllü reklam izlersiniz. Reklam ortaklarımız kişiselleştirilmiş veya kişiselleştirilmemiş reklam göstermek için reklam kimliğinizi kullanabilir.</p>
+<ul>
+<li>Reklam kimliğinizi cihazınızın <b>Ayarlar &rsaquo; Google &rsaquo; Reklamlar</b> bölümünden sıfırlayabilir veya kişiselleştirmeyi kapatabilirsiniz.</li>
+<li>Avrupa Ekonomik Alanı, Birleşik Krallık ve rıza gerektiren diğer bölgelerde, reklam verisi işlenmeden önce rızanız istenir ve rızanızı dilediğiniz zaman geri alabilirsiniz.</li>
+</ul>
 
-  <div class="card">
-    <h2>8. Bu Politikadaki Değişiklikler</h2>
-    <p>
-      Bu Gizlilik Politikası zaman zaman güncellenebilir. Önemli değişiklikler olması durumunda,
-      uygulama içindeki onay ekranı üzerinden tekrar bilgilendirme yapılabilir. Güncel sürüm her
-      zaman bu sayfada yayınlanır.
-    </p>
-  </div>
+<h2 id="b8">8. Çocukların gizliliği</h2>
+<p>Oyun 13 yaşından küçük çocuklara yönelik değildir ve onlardan bilerek kişisel veri toplamayız. 13 yaşından küçük bir çocuğun hesap açtığını fark edersek hesabı ve verilerini sileriz. 13 ile 18 yaş arasındaki kullanıcıların ebeveyn veya vasilerinin bilgisi ve izniyle kullanması gerekir. Çocuğunuzun bize veri verdiğini düşünüyorsanız 13. bölümdeki adresten bize ulaşın.</p>
 
-  <div class="card">
-    <h2>9. İletişim</h2>
-    <p>Bu politika veya veri uygulamaları hakkında sorularınız için:</p>
-    <a class="contact-btn" href="mailto:astrofelyxai@gmail.com">astrofelyxai@gmail.com</a>
-  </div>
+<h2 id="b9">9. Haklarınız ve başvuru</h2>
+<p>KVKK m.11 uyarınca şu haklara sahipsiniz:</p>
+<ul>
+<li>Verilerinizin işlenip işlenmediğini öğrenme ve bilgi talep etme,</li>
+<li>İşlenme amacını ve amacına uygun kullanılıp kullanılmadığını öğrenme,</li>
+<li>Yurt içinde veya yurt dışında aktarıldığı tarafları bilme,</li>
+<li>Eksik veya yanlış işlenmişse düzeltilmesini isteme,</li>
+<li>Kanunda öngörülen şartlar çerçevesinde silinmesini veya yok edilmesini isteme,</li>
+<li>Bu işlemlerin verilerin aktarıldığı üçüncü kişilere bildirilmesini isteme,</li>
+<li>Otomatik sistemlerle analiz sonucu aleyhinize bir sonuç çıkarsa buna itiraz etme (örneğin haksız bir ban kararı),</li>
+<li>Kanuna aykırı işleme nedeniyle zarara uğrarsanız zararın giderilmesini talep etme.</li>
+</ul>
+<p>AB ve Birleşik Krallık'taki kullanıcılar ayrıca GDPR kapsamında verilerinin taşınmasını isteme, işlemeyi kısıtlama ve yetkili veri koruma otoritesine şikayette bulunma haklarına sahiptir.</p>
+<p>Başvurularınızı <mark>[E-POSTA ADRESİ]</mark> adresine, hesap takma adınız ve (varsa) hesabınızla ilişkili e-posta adresiyle birlikte gönderin. Kimliğinizi doğrulamak için ek bilgi isteyebiliriz. Başvurunuzu en geç 30 gün içinde yanıtlarız. Yanıttan memnun kalmazsanız Kişisel Verileri Koruma Kurulu'na şikayette bulunabilirsiniz.</p>
 
-  <footer>
-    © 2026 AstroFelyx: Galaxy Puzzle — Tüm hakları saklıdır.
-  </footer>
+<h2 id="b10">10. Hesap ve veri silme</h2>
+<div class="box"><p>Hesabınızı ve ona bağlı verilerinizi silmek için iki yol vardır:</p>
+<ul>
+<li>Uygulamada <b>Ayarlar &rsaquo; Hesabı Sil</b> düğmesini kullanın.</li>
+<li>Uygulamaya erişemiyorsanız <mark>[E-POSTA ADRESİ]</mark> adresine &ldquo;Hesabımı sil&rdquo; konulu bir e-posta gönderin ve takma adınızı yazın.</li>
+</ul></div>
+<p>Silme talebiniz işlendiğinde hesabınız, profiliniz, bilet bakiyeniz, seviyeniz, lig puanınız ve mesaj kutunuz silinir. Silinen bilet ve ilerleme geri getirilemez. Hile kaydı gibi güvenlik amacıyla tutulması gereken sınırlı veriler, gerekli süre sonunda silinir veya anonim hale getirilir.</p>
 
-</div>
+<h2 id="b11">11. Güvenlik</h2>
+<p>Verilerinizi korumak için şifreli bağlantı, erişim kısıtlamaları ve sunucu tarafı doğrulama gibi makul teknik ve idari önlemler alırız. Hiçbir sistem tamamen risksiz değildir, bu nedenle mutlak güvenlik garantisi veremeyiz.</p>
+
+<h2 id="b12">12. Değişiklikler</h2>
+<p>Bu politikayı zaman zaman güncelleyebiliriz. Önemli değişiklikleri uygulama içinde veya bu sayfada duyururuz. Sayfanın üstündeki &ldquo;Son güncelleme&rdquo; tarihi en güncel sürümü gösterir. Değişiklikten sonra Oyunu kullanmaya devam etmeniz güncel politikayı kabul ettiğiniz anlamına gelir.</p>
+
+<h2 id="b13">13. İletişim</h2>
+<p><mark>[GELİŞTİRİCİ ADI / ŞİRKET ÜNVANI]</mark><br><mark>[ADRES]</mark><br>E-posta: <mark>[E-POSTA ADRESİ]</mark></p>
+
+</main>
+<footer><div class="w">101 Okey &copy; <mark>[GELİŞTİRİCİ ADI]</mark> &nbsp;|&nbsp; <a href="hizmet-sartlari.html">Hizmet Şartları</a></div></footer>
 </body>
 </html>
